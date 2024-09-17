@@ -3,41 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de RPG</title>
+    <title>A Floresta Misteriosa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div id="logo">A Floresta Misteriosa</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre o Jogo</a></li>
+                <li><a href="#instrucoes">Instruções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Jogo de RPG: A Floresta Misteriosa</h1>
-<button id="startButton">Iniciar Jogo</button>
+    <!-- Seção Principal -->
+    <section id="inicio">
+        <h1>Bem-vindo a A Floresta Misteriosa</h1>
+        <p>Uma aventura interativa onde suas escolhas moldam a narrativa. Prepare-se para uma jornada repleta de mistérios e desafios!</p>
+        <p>Instruções: Use os botões para fazer escolhas e avançar na história.</p>
+        <button id="startButton">Começar Jogo</button>
+    </section>
 
-<div id="overlay" class="overlay"></div>
+    <!-- Área de Jogo -->
+    <div id="overlay"></div>
+    
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Você se encontra em uma floresta densa e escura. O céu está coberto de nuvens e o som dos pássaros é abafado. À frente, há dois caminhos: um que leva para o Norte e outro para o Sul. Qual caminho você escolherá?</p>
+            <button id="choice1">Ir para o Norte</button>
+            <button id="choice2">Ir para o Sul</button>
+        </div>
+    </div>
 
-<div id="modal1" class="modal">
-    <p>Você se encontra em uma floresta densa e escura. O céu está coberto de nuvens e o som dos pássaros é abafado. À frente, há dois caminhos: um que leva para o Norte e outro para o Sul. Qual caminho você escolherá?</p>
-    <button id="choice1" class="choiceButton">Ir para o Norte</button>
-    <button id="choice2" class="choiceButton">Ir para o Sul</button>
-</div>
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Você segue para o Norte e encontra uma cabana antiga coberta de musgo. Parece abandonada, mas há sinais de que alguém pode ter estado aqui recentemente. O que você faz?</p>
+            <button id="choice3">Entrar na cabana</button>
+            <button id="choice4">Continuar pela estrada</button>
+        </div>
+    </div>
 
-<div id="modal2" class="modal">
-    <p>Você segue para o Norte e encontra uma cabana antiga coberta de musgo. Parece abandonada, mas há sinais de que alguém pode ter estado aqui recentemente. O que você faz?</p>
-    <button id="choice3" class="choiceButton">Entrar na cabana</button>
-    <button id="choice4" class="choiceButton">Continuar pela estrada</button>
-</div>
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Você segue para o Sul e chega a um rio caudaloso. Há uma ponte de corda velha que parece instável e um caminho que contorna o rio. O que você faz?</p>
+            <button id="choice5">Tentar atravessar a ponte</button>
+            <button id="choice6">Seguir o caminho ao redor do rio</button>
+        </div>
+    </div>
 
-<div id="modal3" class="modal">
-    <p>Você segue para o Sul e chega a um rio caudaloso. Há uma ponte de corda velha que parece instável e um caminho que contorna o rio. O que você faz?</p>
-    <button id="choice5" class="choiceButton">Tentar atravessar a ponte</button>
-    <button id="choice6" class="choiceButton">Seguir o caminho ao redor do rio</button>
-</div>
+    <!-- Modal de Fim -->
+    <div id="endModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="endText">Você completou a sua jornada pela floresta! Suas escolhas determinaram o final da sua aventura. Se desejar, pode jogar novamente para explorar diferentes caminhos e descobertas.</p>
+            <button id="restartButton">Jogar Novamente</button>
+            <button id="exitButton">Sair</button>
+        </div>
+    </div>
 
-<div id="endModal" class="modal">
-    <p>Você completou a sua jornada pela floresta! Suas escolhas determinaram o final da sua aventura. Se desejar, pode jogar novamente para explorar diferentes caminhos e descobertas.</p>
-    <button id="restartButton">Jogar Novamente</button>
-    <button id="exitButton">Sair</button>
-</div>
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2024 A Floresta Misteriosa</p>
+        <p>Desenvolvedores: Nome do Desenvolvedor</p>
+        <p><a href="mailto:contato@florestamisteriosa.com">Contato</a></p>
+        <p><a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://twitter.com" target="_blank">Twitter</a></p>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
