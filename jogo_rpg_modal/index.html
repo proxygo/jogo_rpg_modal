@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de RPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Jogo de RPG: A Floresta Misteriosa</h1>
+<button id="startButton">Iniciar Jogo</button>
+
+<div id="overlay" class="overlay"></div>
+
+<div id="modal1" class="modal">
+    <p>Você se encontra em uma floresta densa e escura. O céu está coberto de nuvens e o som dos pássaros é abafado. À frente, há dois caminhos: um que leva para o Norte e outro para o Sul. Qual caminho você escolherá?</p>
+    <button id="choice1" class="choiceButton">Ir para o Norte</button>
+    <button id="choice2" class="choiceButton">Ir para o Sul</button>
+</div>
+
+<div id="modal2" class="modal">
+    <p>Você segue para o Norte e encontra uma cabana antiga coberta de musgo. Parece abandonada, mas há sinais de que alguém pode ter estado aqui recentemente. O que você faz?</p>
+    <button id="choice3" class="choiceButton">Entrar na cabana</button>
+    <button id="choice4" class="choiceButton">Continuar pela estrada</button>
+</div>
+
+<div id="modal3" class="modal">
+    <p>Você segue para o Sul e chega a um rio caudaloso. Há uma ponte de corda velha que parece instável e um caminho que contorna o rio. O que você faz?</p>
+    <button id="choice5" class="choiceButton">Tentar atravessar a ponte</button>
+    <button id="choice6" class="choiceButton">Seguir o caminho ao redor do rio</button>
+</div>
+
+<div id="endModal" class="modal">
+    <p>Você completou a sua jornada pela floresta! Suas escolhas determinaram o final da sua aventura. Se desejar, pode jogar novamente para explorar diferentes caminhos e descobertas.</p>
+    <button id="restartButton">Jogar Novamente</button>
+    <button id="exitButton">Sair</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
