@@ -62,3 +62,18 @@ document.getElementById('exitButton').addEventListener('click', function() {
     alert('Obrigado por jogar!');
 });
 
+// Função para fechar o modal ao clicar no "x"
+function addCloseEventToModals() {
+    const closeButtons = document.querySelectorAll('.modal .close');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            hideModal(modal.id);
+        });
+    });
+}
+
+// Adicione o evento de fechar aos modais
+document.addEventListener('DOMContentLoaded', function() {
+    addCloseEventToModals();
+});
